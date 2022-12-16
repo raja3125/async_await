@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		let promise = new Promise(function(reslove,reject){
+		//reslove("success")
+		reject("sorry some error")
+		});
+		const getData = async() =>{
+		try{
+		const data = await promise ;
+		console.log(data);
+		}
+		catch(err){
+		console.log(err);
+		}
+		};
+		getData()
+	</script>
+</body>
+</html>
